@@ -420,46 +420,6 @@ img {
   color: var(--first-color-alt);
 }
 
-/* ========================ABOUT======================== */
-.about_img {
-  width: 200px;
-  border-radius: 0.5rem;
-  justify-self: center;
-  align-self: center;
-}
-
-.about_description {
-  text-align: center;
-  margin-bottom: var(--mb-2-5);
-}
-
-.about_info {
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: var(--mb-2-5);
-}
-
-.about_info-title {
-  font-size: var(--h2-font-size);
-  font-weight: var(--font-semi-bold);
-  color: var(--title-color);
-}
-
-.about_info-name {
-  font-size: var(--smaller-font-size);
-}
-
-.about_info-title,
-.about_info-name {
-  display: block;
-  text-align: center;
-}
-
-.about_buttons {
-  display: flex;
-  justify-content: center;
-}
-
 /* ========================SKILLS====================== */
 .skills_container {
   row-gap: 0;
@@ -535,59 +495,10 @@ img {
   width: 80%;
 }
 
-.skills_js {
-  width: 60%;
-}
-
-.skills_react {
-  width: 40%;
-}
-
-.skills_php {
-  width: 50%;
-}
-
-.skills_node {
-  width: 30%;
-}
-
-.skills_firebase {
-  width: 55%;
-}
-
-.skills_python {
-  width: 55%;
-}
-.skills_figma {
-  width: 50%;
-}
-
-.skills_sketch {
-  width: 10%;
-}
-.skills_photoshop {
+.skills_c {
   width: 65%;
 }
-.skills_mysql {
-  width: 50%;
-}
-.skills_mongodb {
-  width: 40%;
-}
 
-.skills_close .skills_list {
-  height: 0;
-  overflow: hidden;
-}
-
-.skills_open .skills_list {
-  height: max-content;
-  margin-bottom: var(--mb-2-5);
-}
-
-.skills_open .skills_arrow {
-  transform: rotate(-180deg);
-}
 /* ========================QUALIFICATION======================== */
 .qualification_tabs {
   display: flex;
@@ -695,75 +606,6 @@ img {
 .swiper-pagination-bullet {
   outline: none;
 }
-
-/* PROJECT IN MIND */
-.project {
-  text-align: center;
-}
-
-.project_bg {
-  background-color: var(--first-color-second);
-  padding-top: 3rem;
-}
-
-.project_title {
-  font-size: var(--h2-font-size);
-  margin-bottom: var(--mb-0-75);
-}
-
-.project_description {
-  margin-bottom: var(--mb-1-5);
-}
-
-.project_title,
-.project_description {
-  color: #fff;
-}
-.project_img {
-  width: 232px;
-  justify-self: center;
-}
-/* TESTIMONIAL */
-
-.testimonial_data,
-.testimonial_header {
-  display: flex;
-}
-
-.testimonial_data {
-  justify-content: space-between;
-  margin-bottom: var(--mb-1);
-}
-.testimonial_img {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  margin-right: var(--mb-0-75);
-}
-
-.testimonial_name {
-  font-size: var(--h3-font-size);
-  font-weight: var(--font-medium);
-}
-
-.testimonial_client {
-  font-size: var(--small-font-size);
-  color: var(--text-color-light);
-}
-
-.testimonial_description {
-  margin-bottom: var(--mb-2-5);
-}
-
-.testimonial_icon-star {
-  color: var(--first-color);
-}
-
-/*                        
-        .swiper-container .swiper-pagination-testimonial{
-            bottom: 0;
-        }
-        */
 /* CONTACT ME  */
 .contact_container {
   row-gap: 3rem;
@@ -834,10 +676,6 @@ img {
 .footer_title {
   font-size: var(--h1-font-size);
   margin-bottom: var(--mb-0-25);
-}
-
-.footer_subtitle {
-  font-size: var(--small-font-size);
 }
 
 .footer_links {
@@ -990,10 +828,9 @@ img {
     justify-self: center;
   }
 
-  .about_container,
+
   .skills_container,
   .portfolio_content,
-  .project_container,
   .contact_container,
   .footer_container {
     grid-template-columns: repeat(2, 1fr);
@@ -1181,32 +1018,5 @@ img {
     transform: translateX(-6rem);
   }
 
-  .services_container {
-    grid-template-columns: repeat(3, 238px);
-  }
-
-  .portfolio_content {
-    column-gap: 5rem;
-  }
-  /*     
-            .swiper-portfolio-icon{
-                font-size: 3.5rem;
-            }
-            .swiper-button-prev{
-                left: -3.5rem;
-            }
-            .swiper-button-next{
-                right: -3.5rem;
-            }
-            .swiper-container-horizontal > .swiper-pagination-bullets{
-                bottom: -4.5rem;
-            }
-            */
-
-  .contact_form {
-    width: 460px;
-  }
-  .contact_inputs {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  
 }
